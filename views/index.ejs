@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include common/head.ejs %>
+</head>
+<body class="container">
+<header>
+    <% include common/header.ejs %>
+</header>
+<main>
+    <div class="jumbotron">
+        <h4><%= tagLine %></h4>
+        <ul>
+            <% drinks.forEach(function (drink) { %>
+                <li><%= drink.name %> - <%= drink.drunkness %></li>
+            <% }); %>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <% include common/footer.ejs %>
+</footer>
+</body>
+</html>
