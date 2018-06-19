@@ -34,7 +34,7 @@ router.get('/:baseId', function (req, res, next) {
 });
 
 //save
-router.put('/', function (req, res, next) {
+router.post('/', function (req, res, next) {
     const base = new Base({
         _id: mongoose.Types.ObjectId(),
     });
