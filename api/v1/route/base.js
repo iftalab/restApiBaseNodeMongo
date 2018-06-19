@@ -40,7 +40,7 @@ router.post('/', function (req, res, next) {
     });
     base.save()
         .then(result => {
-            res.status(200).json(result)
+            res.status(201).json(result)
         }).catch(err => {
             res.status(500).json({ error: err })
         });
