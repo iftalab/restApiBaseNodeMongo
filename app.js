@@ -24,12 +24,12 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 
-var connection = require('./dbHelper');
+// var connection = require('./dbHelper');
 //database : mysql local
 // global.db = connection.dbConnection();
 
 //database : mongo atlas
-connection.makeMongoDBConnection();
+// connection.makeMongoDBConnection();
 
 //managing default headers
 app.use(function (req, res, next) {
@@ -49,9 +49,10 @@ app.use(function (req, res, next) {
 });
 //route
 //####
-var baseRouter = require('./api/v1/route/base');
-app.use('/api/v1/base', baseRouter);
-
+// var baseRouter = require('./api/v1/route/base');
+// app.use('/api/v1/base', baseRouter);
+var indexRouter = require('./routes/index');
+app.use('/', indexRouter);
 
 //error handling
 // catch 404 and forward to error handler

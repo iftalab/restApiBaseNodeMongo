@@ -1,6 +1,6 @@
 {
-  "name": "learn",
-  "version": "0.0.0",
+  "name": "ccrf",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www"
@@ -18,5 +18,23 @@
   },
   "devDependencies": {
     "nodemon": "^1.17.5"
-  }
+  },
+  "description": "Rest API with Node js and MongoDB",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iftalab/restApiBaseNodeMongo.git"
+  },
+  "keywords": [
+    "cancer",
+    "landing",
+    "page",
+    "research"
+  ],
+  "author": "ifta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iftalab/restApiBaseNodeMongo/issues"
+  },
+  "homepage": "https://github.com/iftalab/restApiBaseNodeMongo#readme"
 }
